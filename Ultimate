@@ -1,0 +1,100 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Drown Hub", "Ocean")
+
+
+    --LOCAL PLAYER
+    local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Player")
+
+    PlayerSection:NewSlider("Walkspeed", "SPEED!!", 500, 16, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+    end)
+
+    PlayerSection:NewSlider("Jumppower", "JUMP HIGH!!", 350, 50, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+    end)
+
+    PlayerSection:NewButton("Reset WS/JP", "Resets to all defaults", function()
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end)
+    
+     --Other
+    local Other = Window:NewTab("Other")
+    local OtherSection = Other:NewSection("Other")
+    
+     OtherSection:NewButton("Infinite Yield", "FE Admin Commands", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+    end)
+    
+      OtherSection:NewButton("Chat Spoofer", "Lets you chat for other people", function()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
+    end)
+
+    OtherSection:NewButton("Bypassed Fly", "bird mode", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
+
+        Fly(true)
+    end)
+    
+     --Game
+    local Game = Window:NewTab("Game Support")
+    local GameSection = Game:NewSection("Game Support")
+    
+    GameSection:NewButton("Blox Fruit", "Blox Fruit Has Support", function()
+    end)
+    
+    GameSection:NewButton("Pet simulator x", "Pet Simulator x Has Support", function()
+    end)
+    
+    GameSection:NewButton("Driving Empire", "Driving Empire Has Support", function()
+    end)    
+    
+     --Blox 
+    local Blox = Window:NewTab("Blox Fruit")
+    local BloxSection = Blox:NewSection("Blox Fruit")
+    
+    BloxSection:NewButton("Zee Hub(Recomended)", "Blox Fruit Script", function()
+    loadstring(game:HttpGet("https://isnahamzahpastebin.tech/gratis/ZeeHub.lua"))()
+    end)
+    
+    BloxSection:NewButton("Alcheamy Hub", "Blox Fruit Script", function()
+    loadstring(game:HttpGet("https://luable.netlify.app/AlchemyHub/Luncher.script"))()
+    end)
+    
+    BloxSection:NewButton("Aim Bot ThunderZ Hub", "Blox Fruit Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-HUB/HUB/main/Aimbot"))()
+    end)
+    
+     --Pet
+    local Pet = Window:NewTab("Pet Simulator x")
+    local PetSection = Pet:NewSection("Pet Simulator x")
+    
+    PetSection:NewButton("BT Hub(Recomended)", "Pet Simulator x Script", function()
+    loadstring(game:HttpGetAsync("https://blacktrap.org/blacktrap/users/checkpoint/Auth.txt"))()
+    end)
+        
+    PetSection:NewButton("WD Hub", "Pet Simulator x Script", function()
+    getgenv().boothsnipe = false
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Mainstring.lua"))()
+    end)
+    
+    PetSection:NewButton("Milk Hub", "Pet Simulator x Script", function()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a82cd5447cbbc4c7be0e8db405555787.lua"))()   
+    end)
+    
+    PetSection:NewButton("X7 Hub", "Pet Simulator x Script", function()
+    local request = (syn and syn.request) or (http and http.request) or http_request
+    loadstring(request({['Url']='https://x7.software',['Method']='GET'}).Body)("X7-a5KsoQGw")
+    end)
+    
+     --Drive
+    local Drive = Window:NewTab("Driving Empire")
+    local DriveSection = Drive:NewSection("Driving Empire")
+    
+    DriveSection:NewButton("Pearl Hub(Recomended)", "Driving Empire Script", function()
+    loadstring(game:HttpGet('https://ppearl.vercel.app'))()
+    end)
+    
+    DriveSection:NewButton("Next Script(Coming Soon)", "Driving Empire Script", function()
+    end)
