@@ -27,7 +27,7 @@ local Window = Library.CreateLib("Drown Hub", "Ocean")
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
     end)
     
-      OtherSection:NewButton("Chat Spoofer", "Lets you chat for other people", function()
+     OtherSection:NewButton("Chat Spoofer", "Lets you chat for other people", function()
         loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
     end)
 
@@ -105,4 +105,15 @@ local Window = Library.CreateLib("Drown Hub", "Ocean")
     end)
     
     DriveSection:NewButton("Next Script(Coming Soon)", "Driving Empire Script", function()
+    end)
+
+    --Arse
+    local Arse = Window:NewTab("Arsenal")
+    local ArseSection = Arse:NewSection("Arsenal")
+    
+    ArseSection:NewButton("PWNER Hub(Recomended)", "Arsenal Script", function()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))()
+    end)
+    
+    ArseSection:NewButton("Next Script(Coming Soon)", "Arsenal Script", function()
     end)
