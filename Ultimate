@@ -52,7 +52,10 @@ local Window = Library.CreateLib("Drown Hub", "Ocean")
     end)
     
     GameSection:NewButton("Driving Empire", "Driving Empire Has Support", function()
-    end)    
+    end)
+    
+    GameSection:NewButton("Arsenal", "Arsenal Has Support", function()
+    end)
     
      --Blox 
     local Blox = Window:NewTab("Blox Fruit")
