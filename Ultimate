@@ -57,6 +57,9 @@ local Window = Library.CreateLib("Drown Hub", "Ocean")
     GameSection:NewButton("Arsenal", "Arsenal Has Support", function()
     end)
     
+    GameSection:NewButton("Fishing Simulator(Coming Soon)", "(Coming Soon)", function()
+    end)
+    
      --Blox 
     local Blox = Window:NewTab("Blox Fruit")
     local BloxSection = Blox:NewSection("Blox Fruit")
@@ -120,3 +123,7 @@ local Window = Library.CreateLib("Drown Hub", "Ocean")
     
     ArseSection:NewButton("Next Script(Coming Soon)", "Arsenal Script", function()
     end)
+    
+    --Fish 
+    local Fish = Window:NewTab("Fishing Simulator(Coming Soon)")
+    local FishSection = Fish:NewSection("Fishing Simulator(Coming Soon)")
