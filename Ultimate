@@ -70,6 +70,10 @@ local Window = Library.CreateLib("Drown Hub", "Ocean")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-HUB/HUB/main/Aimbot"))()
     end)
     
+    BloxSection:NewButton("Sagi Hub", "Blox Fruit Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BestScriptEverr/Main-/main/SagiHub"))()
+    end) 
+    
      --Pet
     local Pet = Window:NewTab("Pet Simulator x")
     local PetSection = Pet:NewSection("Pet Simulator x")
