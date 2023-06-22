@@ -75,8 +75,13 @@ local Window = Library.CreateLib("Drown Hub", "Ocean")
     
     BloxSection:NewButton("Sagi Hub", "Blox Fruit Script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/BestScriptEverr/Main-/main/SagiHub"))()
-    end) 
-    
+    end)
+
+    BloxSection:NewButton("Auto Find Fruit", "Blox Fruit Script", function()
+    repeat wait() until game:IsLoaded()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/SonicFruitFarm")()
+    end)
+
      --Pet
     local Pet = Window:NewTab("Pet Simulator x")
     local PetSection = Pet:NewSection("Pet Simulator x")
