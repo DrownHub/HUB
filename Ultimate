@@ -45,6 +45,10 @@ local Window = Library.CreateLib("Drown Hub", "Ocean")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/Synapse-X-Remake.lua"))()
     end)
 
+    --troll
+    local troll = Window:NewTab("Trolling Gui")
+    local trollSection = troll:NewSection("Coming Soon")
+
      --Game
     local Game = Window:NewTab("Game Support")
     local GameSection = Game:NewSection("Game Support")
@@ -124,7 +128,3 @@ local Window = Library.CreateLib("Drown Hub", "Ocean")
     
     ArseSection:NewButton("Next Script(Coming Soon)", "Arsenal Script", function()
     end)
-
-    --troll
-    local troll = Window:NewTab("Trolling Gui")
-    local trollSection = troll:NewSection("Coming Soon")
