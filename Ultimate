@@ -40,7 +40,11 @@ local Window = Library.CreateLib("Drown Hub", "Ocean")
     OtherSection:NewButton("Dex V3", "FE Change World/Place", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
     end)
-   
+
+    OtherSection:NewButton("Synapse X(Recomended use in mobile)", "Executor Synapse X", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/Synapse-X-Remake.lua"))()
+    end)
+
      --Game
     local Game = Window:NewTab("Game Support")
     local GameSection = Game:NewSection("Game Support")
@@ -75,11 +79,6 @@ local Window = Library.CreateLib("Drown Hub", "Ocean")
     
     BloxSection:NewButton("Sagi Hub", "Blox Fruit Script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/BestScriptEverr/Main-/main/SagiHub"))()
-    end)
-
-    BloxSection:NewButton("Auto Find Fruit", "Blox Fruit Script", function()
-    repeat wait() until game:IsLoaded()
-    loadstring(game:HttpGet"https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/SonicFruitFarm")()
     end)
 
      --Pet
