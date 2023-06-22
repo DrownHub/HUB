@@ -124,3 +124,10 @@ local Window = Library.CreateLib("Drown Hub", "Ocean")
     
     ArseSection:NewButton("Next Script(Coming Soon)", "Arsenal Script", function()
     end)
+
+    --troll
+    local troll = Window:NewTab("trolling")
+    local trollSection = troll:NewSection("trolling")
+
+    trollSection:NewButton("Coming Soon", "Coming soon", function()
+    end)
