@@ -47,7 +47,7 @@ local Window = Library.CreateLib("Drown Hub", "Ocean")
 
     --troll
     local troll = Window:NewTab("trolling")
-    local trollSection = troll:NewSection("Coming Soon)
+    local trollSection = troll:NewSection("trolling)
 
     trollSection:NewButton("Coming Soon", "Coming Soon", function()
     end)
