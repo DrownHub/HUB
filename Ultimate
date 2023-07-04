@@ -1,12 +1,15 @@
+if game.PlaceId == 2753915549 then
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Drown Hub v1", "BloodTheme")
+local Window = Library.CreateLib("Drown Hub", "BloodTheme")
 
 local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Main")
 
-MainSection:NewButton("Dupe Beli(Need 50k beli or more", "Gonna Dupe Your Beli", function()
-    if nil the
+MainSection:NewButton("Dupe Beli", "Gonna Dupe Your Beli", function()
+    if nil then
     else
-    game.Players.LocalPlayer:kick("Your beli not enough")
-    end
+   game.Players.LocalPlayer:Kick('Go Buy It From Discord 🤨')
+end
 end)
+end
