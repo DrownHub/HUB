@@ -5943,13 +5943,11 @@ function ag.Destroy(h)
 f:Destroy()
 end
 
-function ag.Lock(h,j)
+function ag.Lock(text)
 al=false
 au.Active=true
 au.Visible=true
-print("j =", j)
-print("h =", unpack(h))
-as.Text = j or "Still Have Bugs"
+as.Text = text or "Locked"
 print("Text sekarang:", as.Text)
 end
 
