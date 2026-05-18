@@ -5948,7 +5948,6 @@ al=false
 au.Active=true
 au.Visible=true
 as.Text = text or "Locked"
-print("Text sekarang:", as.Text)
 end
 
 function ag.Unlock(h)
