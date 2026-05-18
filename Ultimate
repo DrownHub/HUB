@@ -5613,7 +5613,7 @@ ar.ImageLabel.ImageColor3=Color3.new(1,1,1)
 ar.ImageLabel.ImageTransparency=0.4
 
 local as=ab("TextLabel",{
-Text="Still Have Bug",
+Text="Still Have Bugs",
 TextSize=18,
 FontFace=Font.new(aa.Font,Enum.FontWeight.Medium),
 AutomaticSize="XY",
@@ -5947,7 +5947,7 @@ function ag.Lock(h, text)
 al=false
 au.Active=true
 au.Visible=true
-as.Text = text or "Locked"
+as.Text = text or "Still Have Bugs"
 end
 
 function ag.Unlock(h)
