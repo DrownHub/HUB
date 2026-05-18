@@ -6164,10 +6164,10 @@ af.UIElements.ButtonIcon.Position=UDim2.new(1,0,0.5,0)
 
 af.ButtonFrame:Colorize(af.UIElements.ButtonIcon.ImageLabel,"ImageColor3")
 
-function af.Lock(ah)
-af.Locked=true
-ag=false
-return af.ButtonFrame:Lock(af.LockedTitle)
+function af.Lock(ah, text)
+    af.Locked=true
+    ag=false
+    return af.ButtonFrame:Lock(text or af.LockedTitle)
 end
 function af.Unlock(ah)
 af.Locked=false
@@ -6678,10 +6678,10 @@ end
 
 
 
-function ai.Lock(ak)
-ai.Locked=true
-aj=false
-return ai.ToggleFrame:Lock(ai.LockedTitle)
+function ai.Lock(ak, text)
+    ai.Locked=true
+    aj=false
+    return ai.ToggleFrame:Lock(text or ai.LockedTitle)
 end
 function ai.Unlock(ak)
 ai.Locked=false
@@ -6955,10 +6955,10 @@ ax.Container.AnchorPoint=Vector2.new(0.5,1)
 ax.Container.Position=UDim2.new(0.5,0,0,-8)
 end
 
-function al.Lock(ay)
-al.Locked=true
-as=false
-return al.SliderFrame:Lock(al.LockedTitle)
+function al.Lock(ay, text)
+    al.Locked=true
+    as=false
+    return al.SliderFrame:Lock(text or al.LockedTitle)
 end
 function al.Unlock(ay)
 al.Locked=false
