@@ -5948,7 +5948,7 @@ al=false
 au.Active=true
 au.Visible=true
 print("j =", j)
-print("h =", h)
+print("h =", unpack(h))
 as.Text = j or "Still Have Bugs"
 print("Text sekarang:", as.Text)
 end
